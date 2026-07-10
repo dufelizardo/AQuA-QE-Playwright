@@ -1,0 +1,45 @@
+historias:
+  - id: PWT-1
+    modulo: home
+    titulo: "Home exibe cards de navegação"
+    tags:
+      - "@smoke"
+      - "@home"
+    status: draft
+    mapeamento_ppom:
+      spec: tests/e2e/home/pwt-1.spec.ts
+      page: pages/HomePage.ts
+      locators: locators/home.locators.ts
+    criterios_aceite:
+      - id: 1
+        descricao: "Página inicial carrega em menos de 2 segundos"
+        tipo: performance
+      - id: 2
+        descricao: "Todos os cards de navegação estão visíveis"
+        tipo: funcional
+      - id: 3
+        descricao: "Cards com status EM BREVE estão desabilitados para clique"
+        tipo: funcional
+
+  - id: PWT-2
+    modulo: login
+    titulo: "Login com credenciais válidas"
+    tags:
+      - "@smoke"
+      - "@critico"
+      - "@login"
+    status: draft
+    mapeamento_ppom:
+      spec: tests/e2e/login/pwt-2.spec.ts
+      page: pages/LoginPage.ts
+      locators: locators/login.locators.ts
+    criterios_aceite:
+      - id: 1
+        descricao: "Formulário de login exibe campos de e-mail e senha"
+        tipo: funcional
+      - id: 2
+        descricao: "Login com credenciais válidas redireciona para home"
+        tipo: funcional
+      - id: 3
+        descricao: "Login com credenciais inválidas exibe mensagem de erro"
+        tipo: funcional

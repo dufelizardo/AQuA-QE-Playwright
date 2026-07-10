@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+src/*.egg-info/
+
+# uv / virtualenv
+.venv/
+venv/
+uv.lock
+
+# Environment
+.env
+.env.local
+
+# Testes / cobertura
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+.cache/
+
+# IDE
+.vscode/*
+!.vscode/settings.json
+.idea/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dados do projeto (snapshots DOM podem ser grandes)
+knowledge/*/dom/modules/*/snapshots/*.html
+knowledge/*/dom/modules/*/diffs/*.diff
+
+# Logs
+*.log
+logs/

@@ -1,0 +1,33 @@
+modulos:
+  - nome: home
+    aliases:
+      - pagina-inicial
+      - dashboard
+    area_funcional: Navegação principal
+    descricao: Página inicial da aplicação com cards de navegação e atalhos
+    arquivos_ppom:
+      spec: tests/e2e/home/
+      page: pages/HomePage.ts
+      locators: locators/home.locators.ts
+
+  - nome: login
+    aliases:
+      - autenticacao
+      - auth
+    area_funcional: Autenticação
+    descricao: Fluxo de autenticação do usuário (username/password, SSO)
+    arquivos_ppom:
+      spec: tests/e2e/login/
+      page: pages/LoginPage.ts
+      locators: locators/login.locators.ts
+
+  - nome: checkout
+    aliases:
+      - pagamento
+      - compra
+    area_funcional: Transações financeiras
+    descricao: Fluxo completo de checkout e confirmação de operações
+    arquivos_ppom:
+      spec: tests/e2e/checkout/
+      page: pages/CheckoutPage.ts
+      locators: locators/checkout.locators.ts
